@@ -1,14 +1,15 @@
-<%@page import="java.util.Date"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>date</title>
 </head>
 <body>
-	
-<%! 
+<p>
+   今天的日期是: <%= (new java.util.Date()).toLocaleString()%>
+   <%! 
   private int initVar=0;
   private int serviceVar=0;
   private int destroyVar=0;
@@ -44,14 +45,17 @@
 JSP声明
 <%! int i = 0; %>
 <%! int a,b,c; %>
-<p>
-今天的日期是：<%= new Date().toLocaleString() %>
-</p>
+
 <%--该部分注释在网页中不被显示 --%>
 <\%
 %\>
 \'
 \"
 <!-- 注释 -->
+
+
+jsp声明<\%! declaration; [ declaration; ]+ ... \%>
+jsp <%--该部分注释在网页中不被显示 --%>
+</p>
 </body>
 </html>
