@@ -83,6 +83,15 @@
 			<artifactId>oak-run</artifactId>
 			<version>1.0.32</version>
 		</dependency>
+		
+		<!-- utils  -->
+		<!-- https://mvnrepository.com/artifact/com.darwinsys/hirondelle-date4j -->
+		<dependency>
+		    <groupId>com.darwinsys</groupId>
+		    <artifactId>hirondelle-date4j</artifactId>
+		    <version>1.5.0</version>
+		</dependency>
+		
 	</dependencies>
 
 </project>
